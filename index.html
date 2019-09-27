@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>voucher</title>
+	<!-- <meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- <link rel="stylesheet" type="text/css" href="phone.css"> -->
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="phone.js"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="fonts/fontawesome-webfont.svg"> -->
+</head>
+<body>
+
+	<!-- phone interface -->
+<div class="case">
+	<div class="innercase">
+		
+		<div id="screen">  
+			<div id="screen2">
+				<div id="delete" onclick="del()" style="display: none;"><i class="fa fa-remove" style="font-size:20px; color: red;"></i>
+				
+				
+			</div>
+		</div>
+		<div class="btncontainer">
+			<div class="btn" id="btn1" onclick="myClick('1')">1</div> 				
+			<div class="btn" id="btn2" onclick="myClick('2')">2</div>
+			<div class="btn" id="btn3" onclick="myClick('3')">3</div>
+			<div class="btn" id="btn4" onclick="myClick('4')">4</div> 				
+			<div class="btn" id="btn5" onclick="myClick('5')">5</div>
+			<div class="btn" id="btn6" onclick="myClick('6')">6</div>
+			<div class="btn" id="btn7" onclick="myClick('7')">7</div> 				
+			<div class="btn" id="btn8" onclick="myClick('8')">8</div>
+			<div class="btn" id="btn9" onclick="myClick('9')">9</div>
+			<div class="btn" id="btnStar" onclick="myClick('*')">*</div> 				
+			<div class="btn" id="btnSp" onclick="myClick('0')">0</div>
+			<div class="btn" id="btnAsh" onclick="myClick('#')">#</div>
+		</div>
+		<div onclick="call()" id="caller" align="center"><i class="fa fa-phone" style="font-size:36px; color: white;"></i>
+			<!-- <div id="contact">
+				
+			</div>
+			<div id="receiver">
+				
+				
+			</div>
+			<div id="dialedNum">
+					
+			</div> -->
+			
+		</div>
+			
+		</div>
+			<div class="speaker">
+			
+		</div>
+
+	</div>
+</div>
+
+
+
+<div class="container">
+	VOUCHER TYPE 
+	<select>
+		<option id="cardType" value="MTN">MTN</option>
+		<option id="cardType" value="Glo">Glo</option>
+		<option id="cardType" value="Airtel">Airtel</option>
+		<option id="cardType" value="9Mobile">9Mobile</option>
+	</select>
+	<br> <br>
+	AMOUNT 
+	<select >
+		<option  id="amount" value="N100">N100</option>
+		<option  id="amount" value="N200">N200</option>
+		<option  id="amount" value="N500">N500</option>
+		<option  id="amount" value="N1000">N1000</option>
+	</select> QUANTITY: <input id="quant" type="number" name="">
+	<br> <br>
+	<button onclick="rand()">CREAT</button>
+	<br><br>
+	<div id="disp" >
+		
+	</div>
+	<a href="index.html"> <button  >   REFRESH</button></a>
+</div>
+
+
+
+
+
+
+
+</body>
+</html>
