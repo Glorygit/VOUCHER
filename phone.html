@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>phone</title>
+	<meta charset="utf-8">
+  	<meta name="viewport" content="width=device-width, initial-scale=1">
+  	<!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> -->
+	<link rel="stylesheet" type="text/css" href="phone.css">
+	<!-- <link rel="stylesheet" type="text/css" href="phone.css"> -->
+	<script type="text/javascript" src="script.js"></script>
+	<script type="text/javascript" src="phone.js"></script>
+	<!-- <script type="text/javascript" src="javascipt.js"></script> -->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" type="text/css" href="fonts/fontawesome-webfont.svg"> -->
+</head>
+<body>
+
+	<!-- phone interface -->
+<div class="case">
+	<div class="innercase">
+		<div id="blackScreen">
+			<button id="powerOn"  ondblclick="boot()" onclick="stime" ><span style="font-size: 40px;">I</span></button> 
+		</div>
+		<!-- <div id="videoScreen"> -->
+			<!-- <img src="images.jpg"> -->
+			<!-- <video ></video> -->
+			<!-- <video id="btVideo">
+				<source src="bootVideo.pm4" type="video/mp4">
+				
+			</video> -->
+		<!-- </div> -->
+		<div id="appScreen">
+			<div id="apps">	
+				<div id="callIcon" onclick="showDialler()" ><i  class="fa" style=" margin: 10px;  font-size: 36px; color: green">&#xf095;</i>
+				</div>
+				<div id="facebookIcon"><i class="fa" style=" margin: 10px;  font-size: 36px; color: blue;">&#xf082;</i></div>
+				
+				<div id="addressIcon" ><i  class="fa fa-address-book" style=" margin: 10px;  font-size: 36px; color: black;"></i>
+				</div>
+				<div id="messageIcon" ><i  class="fa fa-envelope-o" style=" margin: 10px;  font-size: 36px; color: blue;"></i>
+				</div>	
+				<div id="twitterIcon" ><i  class="fa fa-twitter" style=" margin: 10px;  font-size: 36px; color: blue;"></i>
+				</div>
+				<div id="instagramIcon" ><i  class="fa fa-instagram" style=" margin: 10px;  font-size: 36px; color: red"></i>
+				</div>
+				<div id="cameraIcon" ><i  class="fa fa-camera" style=" margin: 10px;  font-size: 36px; color: black"></i>
+				</div>
+				<div id="googleIcon" ><i  class="fa fa-google" style=" margin: 10px;  font-size: 36px; color: red"></i>
+				</div>
+				<div id="whatsappIcon" ><i  class="fa fa-whatsapp" style=" margin: 10px;  font-size: 36px; color: #00A245;"></i>
+				</div>
+				<div id="pdfIcon" ><i  i class="fad fa-file-pdf" style=" margin: 10px;  font-size: 36px; color: red"></i> </i>
+				<!-- </div>
+				
+						<div id="appsIcon" ><i class="fa fa-chevron-left" style=" margin-left: 10px;  margin-top: 310px;  font-size: 24px;" onclick="boot()"></i>
+					</div>
+					<div  style=" margin-left: 120px; margin-top: -24px;"  onclick="home()">
+						<i id="appsIcon" class="fa fa-square-o"   style="font-size: 24px;" onclick="boot()"></i>
+					</div>
+					<div  style=" margin-left: 220px; margin-top: -24px;"><i id="appsIcon" class="fa fa-bars"   style="font-size: 24px;"></i>
+					 </div>					 -->
+				<!-- </div> -->
+			</div>
+			</div>
+				
+						<div id="appsIcon" ><i class="fa fa-chevron-left" style=" color: white;margin-left: 10px;  margin-top: 310px;  font-size: 24px;" onclick="boot()"></i>
+					</div>
+					<div  style="color: white; margin-left: 120px; margin-top: -24px;"  onclick="home()">
+						<i id="appsIcon" class="fa fa-square-o"   style="font-size: 24px;" onclick="boot()"></i>
+					</div>
+					<div  style="color: white; margin-left: 220px; margin-top: -24px;"><i id="appsIcon" class="fa fa-bars"   style="font-size: 24px;"></i>
+					<!-- </div>					 -->
+				</div>
+		</div>
+		<div id="homeScreen" onload="time()">  <br>
+			<!-- <div id="taskbar" style="background-color: blue;">
+				<div id="tttt" ></div>
+				<button onclick= "stime()" >red</button>
+			</div> -->
+			<div id="phoneClock" style=" font-size: 50px; text-align: center;color:#ABB1BA  background-color: white; margin-top: 80px; margin-left: 30px; width: 200px;">
+				kjl/m';/
+			</div>
+
+			<div id="appsIcon"  ><i class="fa fa-android" style=" margin-left: 120px;  margin-top: 320px;  font-size: 36px; color: green;"ondblclick="loadapps()"></i></div>
+
+			<!-- <i  class="fa fa-square-o"  ></i> -->
+			
+		</div>
+
+		<div id="screen" > 
+			
+			<div id="screen2" >
+				
+			</div>
+			<div id="delete" onclick="del()" style="display: none;"><i class="fa fa-remove"  style="font-size:20px; color: black; background-color: white; float: right; width:298px; height: 20px; "></i>
+				</div>
+			<div class="btncontainer">
+				<div class="btn" id="btn1" onclick="myClick('1')">1</div> 				
+				<div class="btn" id="btn2" onclick="myClick('2')">2</div>
+				<div class="btn" id="btn3" onclick="myClick('3')">3</div>
+				<div class="btn" id="btn4" onclick="myClick('4')">4</div> 				
+				<div class="btn" id="btn5" onclick="myClick('5')">5</div>
+				<div class="btn" id="btn6" onclick="myClick('6')">6</div>
+				<div class="btn" id="btn7" onclick="myClick('7')">7</div> 				
+				<div class="btn" id="btn8" onclick="myClick('8')">8</div>
+				<div class="btn" id="btn9" onclick="myClick('9')">9</div>
+				<div class="btn" id="btnStar" onclick="myClick('*')">*</div> 				
+				<div class="btn" id="btnSp" onclick="myClick('0')">0</div>
+				<div class="btn" id="btnAsh" onclick="myClick('#')">#</div>
+			</div>
+			<div style="display: " onclick="call()" id="caller" align="center"><i class="fa fa-phone" style="font-size:36px; color: white;" ></i>
+				<!-- <div id="contact">
+					
+				</div>
+				<div id="receiver">
+					
+					
+				</div>
+				<div id="dialedNum">
+						
+				</div> -->
+			
+		</div> <br>
+		<div id="appsIcon" ><i class="fa fa-chevron-left" style=" color: white; margin-left: 30px;    font-size: 24px;" onclick="back()"></i>
+					</div>
+					<div  style=" margin-left: 120px; margin-top: -24px;"  onclick="home()">
+						<i id="appsIcon" class="fa fa-square-o"   style="color: white; font-size: 24px;" onclick="boot()"></i>
+					</div>
+					<div  style=" margin-left: 220px; margin-top: -24px;"><i id="appsIcon" class="fa fa-bars"   style="font-size: 24px; color: white;"></i>
+					</div>
+					<!-- </div>					 -->
+		</div>
+	</div>
+	<!-- <div class="speaker"></div> -->
+
+</div>
+
+</body>
+</html>

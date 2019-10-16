@@ -6,16 +6,9 @@ var quantities = quant.value
 		var c = Math.ceil(Math.random() * 10000);
 		var d = Math.ceil(Math.random() * 10000);
 		
-		// console.log(e);
-// console.log(b);
-// console.log(c);
-// console.log(d);
-// var k = Math.random();
-// console.log(k);
-// console.log(k * 10000);
-// var cc = Math.ceil(k * 10000);
 
-// contions to test if random numbers generated is up to four 
+
+// conditions to test if random numbers generated is up to four 
 // digits each if no add multiple of zeros
 		if (a < 10) {
 			a += '000';
@@ -48,14 +41,35 @@ var quantities = quant.value
 			d += '0'
 		}
 		var e = a+'-'+b+'-'+c+'-'+d;
-		console.log(e)
-		// var f = 'ggg'+e;
+		var y = String(a)+String(b)+String(c)+String(d);
+		var store= 'Store'+ Object.keys(localStorage).length;
+		if (cardType.value ='MTN'){
+			var rechargeCode= '*555*';
+			var load = rechargeCode+y+'#';
+		} 
+		 if (cardType.value ='Glo'){
+			var rechargeCode= '*126*';
+			var load = rechargeCode+y+'#';
+		} 
+		 if (cardType.value ='Airtel'){
+			var rechargeCode= '*123*';
+			var load = rechargeCode+y+'#';
+		}
+		 if (cardType.value ='9Mobile'){
+			var rechargeCode= '*232*';
+			var load = rechargeCode+y+'#';
+		} 
+		// else {
+		// 	alert('INVALID');
+		// }
+		
+		alert(load);
+		var s = {'Network':cardType.value, 'PIN':y, 'Amount':amount.value};
+		s = JSON.stringify(s);
+		// alert(R);
+		 localStorage.setItem(store, s );
+		
 
-
-	localStorage.setItem("pin", e);
-	// for (var i = 0; i < quantities; i++) {
-	// 	localStorage.setItem("pinn", e[i]);
-	// }
 
 
 	var dat = new Date;
@@ -74,11 +88,9 @@ var quantities = quant.value
 	if (S <10) {
 		S= '0'+S;
 	}
-// console.log(cc.length);
 
-// console.log(b);
-// console.log(c);
-// console.log(d);
+
+
 card();
 document.getElementById('disp').style.visibility= 'visible';
 document.getElementById('disp').innerHTML += '<b>'+ 'PIN: '+ e + '</b>'+'<br>';
@@ -87,6 +99,8 @@ document.getElementById('disp').innerHTML+=    day+'/'+month+'/'+year+'--'+H+':'
 
 }
 }
+
+
 function card(){
 	var w = document.getElementById('amount').value;
 	var v = document.getElementById('cardType').value;
@@ -99,78 +113,3 @@ function card(){
 	// document.getElementById('disp').innerHTML+=    (H+':'+M+':'+S);
 	}
 
-// button onclick="callLocal()">Click</button>
-	// <div display></div>
-	// <script type="text/javascript">
-	// 	var obj = { name:"Taiwo", School: "SQI"};
-	// 	var myObj = JSON.stringify(obj);
-	// 	localStorage.setItem("nam", myObj);
-	// </script>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-	function rand12(min, max) {
-var quatities = quant.value;
-	for (var i = 0; i < quant; i++) {
-		
-// document.getElementById('disp').innerHTML = random();
-var a = Math.ceil(Math.random() * 10000);
-var b = Math.ceil(Math.random() * 10000);
-var c = Math.ceil(Math.random() * 10000);
-var d = Math.ceil(Math.random() * 10000);
-
-// var k = Math.random();
-// console.log(k);
-// console.log(k * 10000);
-// var cc = Math.ceil(k * 10000);
-// if (d < 1000) {
-// 	d += '0';
-// } else if (d< 100) {
-// 	d += '00'
-// }
-// console.log(cc.length);
-
-// console.log(b);
-// console.log(c);
-// console.log(d);
-document.getElementById('disp').innerHTML +=  a+'-'+b+'-'+c+'-'+d;
-
-}
-	}
-
-
-
-
-
-
-
-
-	
